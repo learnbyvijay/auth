@@ -1,0 +1,72 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM DATA</title>
+   
+    <style>
+        *{ box-sizing: border-box; }
+        html, body{ margin: 0; padding: 0; }
+        .container{
+            margin: 10px 50px;
+        }
+        .form-group{
+            margin: 10px;
+        }
+        input{
+            width: 100%;
+            border: solid 1px #eee;
+            padding: 15px 10px;
+        }
+        input[type="button"]{
+            width: 200px;
+            padding: 15px;
+            
+            background: #fff;
+            color: dodgerblue;
+            border: solid 1px dodgerblue;
+            cursor: pointer;
+            transition:  all .38s ease-in-out;
+        }
+        input[type="button"]:hover{
+            background: dodgerblue;
+            color: #fff;
+        }
+        table tr td{
+            border: solid 1px #eee;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h2>MY INFO</h2>
+        
+            <!-- DISPLAY USERS DATA -->
+		        <div>
+		        	<input type="button" value="Click_ShowUserLst"onclick="insertNewRecord();"><br/>
+		        <!--Table-->
+		        <table class="list"  id="userlist" >
+		            <thead>
+		                <tr>
+		                    <th>firstName</th>
+		                	<th>lastname</th>
+		                    <th>email</th>
+		                    <th>password</th>
+		                 </tr>
+		            </thead>
+		            <tbody>
+
+		            </tbody>
+		        </table>
+
+
+		    </div>
+    </div>
+
+   <script src="./script/script.js"> </script> 
+
+</body>
+</html>
